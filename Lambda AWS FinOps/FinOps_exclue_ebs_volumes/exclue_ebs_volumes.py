@@ -1,10 +1,10 @@
 import json
 import boto3
 from datetime import datetime, timedelta, timezone
-#import smtplib
+ #import smtplib
 
 def lambda_handler(event, context):
-    
+     
     ec2_client = boto3.client('ec2')
     sns_client = boto3.client('sns')
 

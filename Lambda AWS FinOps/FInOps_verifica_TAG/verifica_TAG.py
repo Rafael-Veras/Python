@@ -15,7 +15,7 @@ sns_client = boto3.client('sns')
 
 ec2_client = boto3.client("ec2", region_name="us-east-1")
 
-
+ 
 def lambda_handler(event, context):
     email_body = "## Lista de ambientes sem TAG na região (us-east-1) \n\n\n"
     sns_arn = 'arn:aws:sns:us-east-1:xxxx:xxxx'
@@ -46,7 +46,7 @@ def lambda_handler(event, context):
     for v in reservations['Reservations']:
 
         idInstances.append(v['Instances'][0]['InstanceId'])
-        # v[Instances]['Tags']['Value']
+         # v[Instances]['Tags']['Value']
         # print(v['Tags']['Value'])
 
         verificandoNome = 0

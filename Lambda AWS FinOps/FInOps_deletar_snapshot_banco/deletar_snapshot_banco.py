@@ -36,7 +36,7 @@ def lambda_handler(event, context):
     email_body = "## Lista de snapshot de banco em (us-east-1) excluidos ## \n\n\n"
 
     client = boto3.client('rds',region_name="us-east-1")
-    #client = boto3.client('rds', region_name="sa-east-1")
+     #client = boto3.client('rds', region_name="sa-east-1")
 
 
     sns_client = boto3.client('sns',region_name="us-east-1")
@@ -51,7 +51,7 @@ def lambda_handler(event, context):
     for snapshot in snapshotbanco['DBSnapshots']:
         start_time = snapshot['SnapshotCreateTime']
 
-        periodo_por_dias = 93
+        periodo_por_dias = 93 
         delete_time = datetime.now(tz=timezone.utc) - timedelta(days=periodo_por_dias)
 
 

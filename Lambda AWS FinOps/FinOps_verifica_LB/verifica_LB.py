@@ -42,9 +42,9 @@ def lambda_handler(event, context):
             Message = email_body
         ) 
     
-      
+       
 
-  #for v in response['LoadBalancers']:
+   #for v in response['LoadBalancers']:
    # if v['State']['Code'] != 'active':
     #print('State:' , v['State']['Code'])
    #print('Type:' , v['Type'])

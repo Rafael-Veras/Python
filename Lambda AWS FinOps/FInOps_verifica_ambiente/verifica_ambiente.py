@@ -125,7 +125,7 @@ def codigo(nome,id,a):
     return email_body,validar_enviar_email
 
    
-
+ 
 
 
 
@@ -145,7 +145,7 @@ def lambda_handler(event, context):
     for v in reservations['Reservations']:
 
         idInstances.append(v['Instances'][0]['InstanceId'])
-        # v[Instances]['Tags']['Value']
+         # v[Instances]['Tags']['Value']
         # print(v['Tags']['Value'])
 
         verificandoNome = 0

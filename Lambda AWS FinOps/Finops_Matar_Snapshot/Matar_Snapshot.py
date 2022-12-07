@@ -63,8 +63,8 @@ def lambda_handler(event, context):
             #Aqui desassocio a AMI - Em ImageId - Informar a AMI depois de se assegurar que realmente pode apagar
             #response = c.deregister_image(DryRun=False, ImageId = 'ami-1a5b5a70')
         
-            #snapshot.delete()
-    
+             #snapshot.delete()
+     
         
 
             for variavel in response['Snapshots']:
